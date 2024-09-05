@@ -126,7 +126,11 @@
     .contact-cont h1{
         font-size: 30px;
     }
-    .form-content input , form-content textarea{
+    .form-content input{
     width: 120%;
    }
+    .form-content textarea
+    {
+        width: 120%;
+    }
 }
