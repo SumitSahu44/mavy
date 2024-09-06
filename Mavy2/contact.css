@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    margin-bottom: 4rem;
+}
+.footer{
+    color: white;
+}
+.contact-cont{
+    width: 70vw;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.contact-cont h1{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(232 223 223);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.wrapper{
+    display: flex;
+    gap: 10%;
+    /* justify-content: space-between; */
+}
+.left{
+    width: 50%;
+    padding-left: 1rem;
+}
+.left-heading {
+    padding-top: 2rem;
+}
+.left-heading h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.form{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    display: flex;
+}
+.form-content input{
+    margin-top: 3px;
+    border: 0.5px solid rgb(158, 153, 153);
+    padding: 8px 16px;
+    width: 150%;
+}
+.form-content h4{
+    font-weight: 500;
+}
+.form-content textarea{
+    width: 150%;
+    height: 150px;
+    padding: 8px ;
+}
+.form-content{
+    padding-bottom: 2rem;
+    width: 100%;
+}
+.form button{
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #E5B80B;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+.right{
+    width: 40%;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: rgb(232 223 223);
+}
+.right #info{
+    padding-top: 12px;
+    padding-bottom: 4rem;
+}
+/* res */
+@media screen and (max-width:970px) {
+    .left-heading p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:900px) {
+    .contact-cont{
+        width: 80vw;
+    }
+    #info p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:830px) {
+    .contact-cont{
+        width: 90vw;
+    }
+}
+@media screen and (max-width:650px) {
+    .contact-cont h1{
+        font-size: 40px;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .right #info{
+        padding-bottom: 2rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .contact-cont h1{
+        font-size: 30px;
+    }
+    .form-content input{
+        width: 100%;
+    }
+    .form-content textarea{
+        width: 100%;
+        height: 100px;
+    }
+}
